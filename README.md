@@ -145,8 +145,6 @@ The project must also compile without explicitly passing `BUFFER_SIZE`, because 
 
 <h3>Example Usage</h3>
 
-(it can be used to test my gnl)
-
 ```c
 #include <fcntl.h>
 #include <stdio.h>
@@ -172,6 +170,8 @@ int	main(void)
 	return (0);
 }
 ```
+
+I will also provide a main.c to test this function with one, multiple FDs or even with STDIN (FD(0)) in my github repo, at: `https://github.com/lucsanto/get_next_line`
 
 If `file.txt` contains:
 
