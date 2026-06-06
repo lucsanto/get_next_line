@@ -54,5 +54,18 @@ int	main(void)
 	close(fd1);
 	// close(fd2);
 	printf("\n");
+	
+	printf("\n------teste stdin / fd 0-------\n");
+	printf("Digite algumas linhas e aperte Ctrl+D para finalizar:\n");
+
+	char *line;
+
+	line = get_next_line(0);
+	while (line)
+	{
+		printf("linha lida: %s", line);
+		free(line);
+		line = get_next_line(0);
+	}
 	return (0);
 }
