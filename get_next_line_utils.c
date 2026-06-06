@@ -2,18 +2,15 @@
 
 int	newline_not_found(char *str)
 {
-	int	i;
-
-	i = 1;
 	if (!str)
-		return (i);
+		return (1);
 	while (*str)
 	{
 		if (*str == '\n')
-			i = 0;
+			return (0);
 		str++;
 	}
-	return (i);
+	return (1);
 }
 
 char	*init_empty(void)
