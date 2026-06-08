@@ -34,9 +34,9 @@ int	main(void)
 	print_gnl(fd1);
 	close(fd1);
 
-	printf("\n------fd inválido-------\n");
-	if (get_next_line(-1) == NULL)
-		printf("fd invalido retornou NULL\n");
+	// printf("\n------fd inválido-------\n");
+	// if (get_next_line(-1) == NULL)
+	// 	printf("fd invalido retornou NULL\n");
 
 	// printf("\n-------bonus-------\n");
 	// fd1 = open("a.txt", O_RDONLY);
@@ -51,21 +51,21 @@ int	main(void)
 	// printf("fd1: %s", get_next_line(fd1));
 	// printf("fd2: %s", get_next_line(fd2));
 
-	close(fd1);
+	// close(fd1);
 	// close(fd2);
-	printf("\n");
+	// printf("\n");
 	
-	printf("\n------teste stdin / fd 0-------\n");
-	printf("Digite algumas linhas e aperte Ctrl+D para finalizar:\n");
+	// printf("\n------teste stdin / fd 0-------\n");
+	// printf("Digite algumas linhas e aperte Ctrl+D para finalizar:\n");
 
-	char *line;
+	// char *line;
 
-	line = get_next_line(0);
-	while (line)
-	{
-		printf("linha lida: %s", line);
-		free(line);
-		line = get_next_line(0);
-	}
+	// line = get_next_line(0);
+	// while (line)
+	// {
+	// 	printf("linha lida: %s", line);
+	// 	free(line);
+	// 	line = get_next_line(0);
+	// }
 	return (0);
 }
